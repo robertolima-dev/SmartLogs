@@ -122,7 +122,7 @@ Desenvolvido por **[Roberto Lima](https://github.com/robertolima-dev)** 🚀✨
 Deixe uma ⭐ no repositório e compartilhe com a comunidade! 🚀✨  
 
 ```bash
-git clone https://github.com/seuusuario/SmartLogs.git
+git clone https://github.com/robertolima-dev/SmartLogs.git
 cd SmartLogs
 pip install -e .
 ```
