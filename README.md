@@ -11,6 +11,7 @@
 - ⚡ **Suporte a níveis de log**: `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`.
 - 📊 **Customização avançada** via variáveis de ambiente.
 - 🛠 **Compatível com frameworks** como Django, Flask e FastAPI.
+- 🔍 **Recursos avançados de debug** para desenvolvimento e troubleshooting.
 
 ---
 
@@ -60,6 +61,31 @@ os.environ["SMARTLOGS_TELEGRAM_CHAT_ID"] = "SEU_CHAT_ID"
 logger.critical("Erro grave! Notificando via Telegram.")
 ```
 
+### 🔍 **Recursos de Debug**
+```python
+from SmartLogs.debug import DebugLogger
+
+# Inicializa o logger de debug
+debug_logger = DebugLogger(log_file="debug.log")
+
+# Log com stack trace
+def funcao_problema():
+    debug_logger.debug_with_stack("Erro encontrado aqui!")
+
+# Log de variáveis de ambiente
+debug_logger.log_environment_variables(["PATH", "PYTHONPATH"])
+
+# Profiling de função
+@debug_logger.profile
+def funcao_lenta():
+    time.sleep(1)
+    return "concluído"
+
+# Inspeção de variáveis
+variaveis = {"x": 10, "y": 20}
+debug_logger.inspect_variables(locals())
+```
+
 ---
 
 ## 🏃 **Executando Testes**
@@ -83,10 +109,12 @@ SmartLogs/
 ├── SmartLogs/                 # 📦 Código do pacote
 │   ├── __init__.py
 │   ├── logger.py              # 🔥 Implementação principal do logger
+│   ├── debug.py               # 🔍 Recursos avançados de debug
 │   ├── config.py              # ⚙️ Configurações globais do logger
 │
 ├── tests/                     # 🧪 Testes unitários
 │   ├── test_logger.py
+│   ├── test_debug.py
 │
 ├── setup.py                   # ⚙️ Configuração do pacote
 ├── README.md                  # 📚 Documentação do projeto
