@@ -202,3 +202,304 @@ test_var: test_value
 test_dict: {'key': 'value'}
 test_list: [1, 2, 3]
 excinfo: <ExceptionInfo for raises contextmanager>
+2025-05-29 14:05:20,811 - DEBUG - Function 'slow_function' took 0.1050 seconds to execute
+2025-05-29 14:05:20,814 - DEBUG - Variables in scope:
+logger: <SmartLogs.debug.DebugLogger object at 0x1075a5b70>
+test_var: test_value
+test_dict: {'key': 'value'}
+test_list: [1, 2, 3]
+excinfo: <ExceptionInfo for raises contextmanager>
+2025-05-29 14:05:20,814 - DEBUG - Variables in scope:
+logger: <SmartLogs.debug.DebugLogger object at 0x1075a5b70>
+test_var: test_value
+test_dict: {'key': 'value'}
+test_list: [1, 2, 3]
+excinfo: <ExceptionInfo for raises contextmanager>
+2025-05-29 14:05:20,816 - DEBUG - Environment Variables:
+TEST_VAR_1: test_value_1
+TEST_VAR_2: test_value_2
+2025-05-29 14:05:20,816 - DEBUG - Environment Variables:
+TEST_VAR_1: test_value_1
+TEST_VAR_2: test_value_2
+2025-05-29 14:05:20,816 - DEBUG - Environment Variables:
+TEST_VAR_1: test_value_1
+TEST_VAR_2: test_value_2
+2025-05-29 14:05:20,822 - DEBUG - Teste de stack trace
+Stack Trace:
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 196, in _run_module_as_main
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 86, in _run_code
+  File '/opt/homebrew/lib/python3.10/site-packages/pytest/__main__.py', line 9, in <module>
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 201, in console_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 175, in main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 330, in pytest_cmdline_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 283, in wrap_session
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 337, in _main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 362, in pytest_runtestloop
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 113, in pytest_runtest_protocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 132, in runtestprotocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 241, in call_and_report
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 341, in from_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 242, in <lambda>
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 174, in pytest_runtest_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 1627, in runtest
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 159, in pytest_pyfunc_call
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 18, in test_stack_trace
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 14, in outer_function
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 11, in inner_function
+2025-05-29 14:05:20,822 - DEBUG - Teste de stack trace
+Stack Trace:
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 196, in _run_module_as_main
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 86, in _run_code
+  File '/opt/homebrew/lib/python3.10/site-packages/pytest/__main__.py', line 9, in <module>
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 201, in console_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 175, in main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 330, in pytest_cmdline_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 283, in wrap_session
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 337, in _main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 362, in pytest_runtestloop
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 113, in pytest_runtest_protocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 132, in runtestprotocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 241, in call_and_report
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 341, in from_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 242, in <lambda>
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 174, in pytest_runtest_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 1627, in runtest
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 159, in pytest_pyfunc_call
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 18, in test_stack_trace
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 14, in outer_function
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 11, in inner_function
+2025-05-29 14:05:20,822 - DEBUG - Teste de stack trace
+Stack Trace:
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 196, in _run_module_as_main
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 86, in _run_code
+  File '/opt/homebrew/lib/python3.10/site-packages/pytest/__main__.py', line 9, in <module>
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 201, in console_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 175, in main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 330, in pytest_cmdline_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 283, in wrap_session
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 337, in _main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 362, in pytest_runtestloop
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 113, in pytest_runtest_protocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 132, in runtestprotocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 241, in call_and_report
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 341, in from_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 242, in <lambda>
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 174, in pytest_runtest_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 1627, in runtest
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 159, in pytest_pyfunc_call
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 18, in test_stack_trace
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 14, in outer_function
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 11, in inner_function
+2025-05-29 14:05:20,822 - DEBUG - Teste de stack trace
+Stack Trace:
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 196, in _run_module_as_main
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 86, in _run_code
+  File '/opt/homebrew/lib/python3.10/site-packages/pytest/__main__.py', line 9, in <module>
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 201, in console_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 175, in main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 330, in pytest_cmdline_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 283, in wrap_session
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 337, in _main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 362, in pytest_runtestloop
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 113, in pytest_runtest_protocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 132, in runtestprotocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 241, in call_and_report
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 341, in from_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 242, in <lambda>
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 174, in pytest_runtest_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 1627, in runtest
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 159, in pytest_pyfunc_call
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 18, in test_stack_trace
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 14, in outer_function
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 11, in inner_function
+2025-05-29 14:05:33,967 - DEBUG - Variables in scope:
+logger: <SmartLogs.debug.DebugLogger object at 0x107965fc0>
+test_var: test_value
+test_dict: {'key': 'value'}
+test_list: [1, 2, 3]
+excinfo: <ExceptionInfo for raises contextmanager>
+2025-05-29 14:05:34,074 - DEBUG - Function 'slow_function' took 0.1050 seconds to execute
+2025-05-29 14:05:34,074 - DEBUG - Function 'slow_function' took 0.1050 seconds to execute
+2025-05-29 14:05:34,076 - DEBUG - Teste de stack trace
+Stack Trace:
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 196, in _run_module_as_main
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 86, in _run_code
+  File '/opt/homebrew/lib/python3.10/site-packages/pytest/__main__.py', line 9, in <module>
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 201, in console_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 175, in main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 330, in pytest_cmdline_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 283, in wrap_session
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 337, in _main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 362, in pytest_runtestloop
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 113, in pytest_runtest_protocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 132, in runtestprotocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 241, in call_and_report
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 341, in from_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 242, in <lambda>
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 174, in pytest_runtest_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 1627, in runtest
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 159, in pytest_pyfunc_call
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 18, in test_stack_trace
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 14, in outer_function
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 11, in inner_function
+2025-05-29 14:05:34,076 - DEBUG - Teste de stack trace
+Stack Trace:
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 196, in _run_module_as_main
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 86, in _run_code
+  File '/opt/homebrew/lib/python3.10/site-packages/pytest/__main__.py', line 9, in <module>
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 201, in console_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 175, in main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 330, in pytest_cmdline_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 283, in wrap_session
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 337, in _main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 362, in pytest_runtestloop
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 113, in pytest_runtest_protocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 132, in runtestprotocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 241, in call_and_report
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 341, in from_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 242, in <lambda>
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 174, in pytest_runtest_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 1627, in runtest
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 159, in pytest_pyfunc_call
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 18, in test_stack_trace
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 14, in outer_function
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 11, in inner_function
+2025-05-29 14:05:34,076 - DEBUG - Teste de stack trace
+Stack Trace:
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 196, in _run_module_as_main
+  File '/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py', line 86, in _run_code
+  File '/opt/homebrew/lib/python3.10/site-packages/pytest/__main__.py', line 9, in <module>
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 201, in console_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/config/__init__.py', line 175, in main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 330, in pytest_cmdline_main
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 283, in wrap_session
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 337, in _main
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/main.py', line 362, in pytest_runtestloop
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 113, in pytest_runtest_protocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 132, in runtestprotocol
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 241, in call_and_report
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 341, in from_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 242, in <lambda>
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/runner.py', line 174, in pytest_runtest_call
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 1627, in runtest
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_hooks.py', line 513, in __call__
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_manager.py', line 120, in _hookexec
+  File '/opt/homebrew/lib/python3.10/site-packages/pluggy/_callers.py', line 103, in _multicall
+  File '/opt/homebrew/lib/python3.10/site-packages/_pytest/python.py', line 159, in pytest_pyfunc_call
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 18, in test_stack_trace
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 14, in outer_function
+  File '/Users/robertolima/Documents/projects/python/pip/SmartLogs/tests/test_debug.py', line 11, in inner_function
+2025-05-29 14:05:34,078 - DEBUG - Environment Variables:
+TEST_VAR_1: test_value_1
+TEST_VAR_2: test_value_2
+2025-05-29 14:05:34,078 - DEBUG - Environment Variables:
+TEST_VAR_1: test_value_1
+TEST_VAR_2: test_value_2
+2025-05-29 14:05:34,078 - DEBUG - Environment Variables:
+TEST_VAR_1: test_value_1
+TEST_VAR_2: test_value_2
+2025-05-29 14:05:34,078 - DEBUG - Environment Variables:
+TEST_VAR_1: test_value_1
+TEST_VAR_2: test_value_2

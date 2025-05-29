@@ -5,8 +5,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "SmartLogs"
-version = "1.0.0"
-description = "Um logger inteligente para projetos Python, com suporte a cores, arquivos e integrações com Slack/Telegram."
+version = "1.1.0"
+description = "📢 Um logger inteligente para projetos Python, com suporte a cores, arquivos e integrações com Slack/Telegram."
 readme = "README.md"
 license = { file = "LICENSE" } # Ou "MIT" direto, se preferir.
 authors = [

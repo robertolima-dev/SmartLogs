@@ -86,6 +86,69 @@ variaveis = {"x": 10, "y": 20}
 debug_logger.inspect_variables(locals())
 ```
 
+### Novos Casos de Uso: Formatação Avançada
+
+#### Formatação JSON
+```python
+from SmartLogs.formatter import JSONFormatter
+from datetime import datetime
+
+formatter = JSONFormatter()
+print(formatter.format("Mensagem de log", "INFO", datetime.now()))
+```
+
+#### Formatação XML
+```python
+from SmartLogs.formatter import XMLFormatter
+from datetime import datetime
+
+formatter = XMLFormatter()
+print(formatter.format("Mensagem de log", "ERROR", datetime.now()))
+```
+
+#### Formatação YAML
+```python
+from SmartLogs.formatter import YAMLFormatter
+from datetime import datetime
+
+formatter = YAMLFormatter()
+print(formatter.format("Mensagem de log", "WARNING", datetime.now()))
+```
+
+#### Formatação em Tabela
+```python
+from SmartLogs.formatter import TableFormatter
+from datetime import datetime
+
+formatter = TableFormatter()
+print(formatter.format("Mensagem de log", "DEBUG", datetime.now()))
+```
+
+#### Formatação com Template Personalizado
+```python
+from SmartLogs.formatter import TemplateFormatter
+from datetime import datetime
+
+template = "[{timestamp}] {level}: {message}"
+formatter = TemplateFormatter(template)
+print(formatter.format("Mensagem de log", "INFO", datetime.now()))
+```
+
+#### Formatação com Estilos Personalizados (cor, negrito, itálico)
+```python
+from SmartLogs.formatter import SmartFormatter
+from datetime import datetime
+
+formatter = SmartFormatter(
+    styles={
+        "INFO": {"color": "green", "bold": True},
+        "ERROR": {"color": "red", "italic": True}
+    }
+)
+print(formatter.format("Mensagem de log", "INFO", datetime.now()))
+print(formatter.format("Mensagem de log", "ERROR", datetime.now()))
+```
+
 ---
 
 ## 🏃 **Executando Testes**
