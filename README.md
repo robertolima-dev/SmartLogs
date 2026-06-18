@@ -179,7 +179,7 @@ SmartLogs/
 │   ├── test_logger.py
 │   ├── test_debug.py
 │
-├── setup.py                   # ⚙️ Configuração do pacote
+├── pyproject.toml              # ⚙️ Configuração do pacote
 ├── README.md                  # 📚 Documentação do projeto
 ├── LICENSE                    # 📜 Licença MIT
 └── MANIFEST.in                 # 📋 Inclusão de arquivos extras
