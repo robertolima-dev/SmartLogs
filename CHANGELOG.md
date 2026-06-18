@@ -1,10 +1,16 @@
 # 📜 Changelog
 
 
-## [1.1.1] - 2026-06-18
+## [1.1.2] - 2026-06-18
+Nota: a tag `v1.1.1` foi criada por engano sem nunca disparar o release
+workflow (0 runs) e nunca chegou a ser publicada no PyPI; esta versão a
+substitui.
+
 ### Corrigido
 - `pyyaml` faltava em `[project.dependencies]` no `pyproject.toml`: o wheel
   publicado não instalava PyYAML, mesmo `formatter.py` dependendo dele.
+- `ci.yml` não instalava o pacote (`pip install -e .`) antes do `pytest`,
+  causando `ModuleNotFoundError: colorama` na CI.
 
 ### Alterado
 - Removido `setup.py` duplicado; `pyproject.toml` passa a ser a única fonte
