@@ -1,6 +1,17 @@
 # 📜 Changelog
 
 
+## [1.1.1] - 2026-06-18
+### Corrigido
+- `pyyaml` faltava em `[project.dependencies]` no `pyproject.toml`: o wheel
+  publicado não instalava PyYAML, mesmo `formatter.py` dependendo dele.
+
+### Alterado
+- Removido `setup.py` duplicado; `pyproject.toml` passa a ser a única fonte
+  de metadados do pacote.
+- Build via `python -m build` + `twine check`, com CI (`ci.yml`) e release
+  automatizado por tag (`release.yml`) publicando no PyPI.
+
 ## [1.1.0] - 2025-05-29
 ### Adicionado
 - Suporte a múltiplos formatadores avançados: JSON, XML, YAML, Tabela e Template personalizado.
