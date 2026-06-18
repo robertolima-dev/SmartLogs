@@ -19,6 +19,9 @@ jobs:
       - name: Instalar dependências de build/test
         run: python -m pip install --upgrade pip build twine pytest
 
+      - name: Instalar o pacote (deps de runtime)
+        run: pip install -e .
+
       - name: Rodar testes
         run: pytest
 
